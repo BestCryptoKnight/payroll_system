@@ -1,0 +1,117 @@
+.stake-panel {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 40px;
+    border: 1px solid #888888;
+    border-radius: 10px;
+
+    .panel-title {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .period-btn-group {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .remove-user {
+        background: #1de9b6;
+        border: none;
+        outline: none;
+    }
+
+    .remove-user:hover {
+        scale: 1.1;
+        color: red;
+    }
+
+    .apy-btn {
+        text-align: center;
+        padding: 30px 0;
+
+        button {
+            font-size: 20px;
+        }
+    }
+
+    .ido-list {
+        margin-bottom: 30px;
+
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            font-weight: 700;
+            font-size: 18px;
+            border-bottom: 1px solid #888888;
+        }
+    }
+
+    .panel-sm {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        background-color: #111111;
+        min-height: 5rem;
+        margin-bottom: 2rem;
+        border-radius: 3px;
+
+        .amount-input-form {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+
+        .max-btn-form {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            padding: 10px 0;
+        }
+
+        .panel-btn {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .create-btn-form {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.btn {
+    text-transform: none !important;
+}
+
+.input-amount {
+    background-color: rgba(0, 0, 0, 0);
+    height: 2rem;
+    color: #ffffff !important;
+}
+
+.btn-xs {
+    padding: 0 10px !important;
+    line-height: 2rem;
+    height: 2rem;
+}
+
+@media (max-width:567px) {
+    .period-btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

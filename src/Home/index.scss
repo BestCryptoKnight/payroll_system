@@ -1,0 +1,134 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 100px;
+	background-color: white;
+
+	section {
+		padding-top: 80px;
+		h1 {
+			margin-bottom: 2em;
+		}
+		.gap {
+			display: flex;
+			gap: 1em;
+		}
+		.desc {
+			font-size: 1.2em;
+			margin: 30px 0;
+		}
+		img {
+			width: auto;
+			height: 300px;
+		}
+		.button {
+			display: inline-block;
+			cursor: pointer;
+			padding: 0.5em 2em;
+			border-radius: 1.5em;
+			border: 1px solid var(--primary);
+			background-color: var(--primary);
+			color: var(--white);
+			&:hover {
+				border-color: var(--primary-hover);
+				background-color: var(--primary-hover) !important;
+				color: var(--white) !important;
+			}
+			&.second {
+				color: var(--gray);
+				background-color: white;
+				border-color: var(--gray);
+				border: 1px solid var(--gray);
+				&:hover {
+					border-color: var(--primary-hover);
+				}
+			}
+		}
+		.home-img {
+			text-align: right;
+		}
+		@media screen and (max-width: 700px) {
+			.home-img {
+				text-align: center;
+				order: -1;	
+			}
+		}
+
+	}
+	.usage {
+		.row > div {
+			margin-bottom: 50px;
+		}
+		img {
+			margin-left: 30px;
+			max-width: 80px;
+			max-height: 50px;
+			@media screen and (max-width: 1000px) {
+				margin-left: 37%;
+			}
+		}
+	}
+	.block {
+		display: flex;
+		gap: 70px;
+		margin-top: 120px;
+		img {
+			height: 200px;
+		}
+
+		.arrow {
+			width: 80px;
+			height: auto;
+			@media screen and (max-width: 768px) {
+				-webkit-transform: rotate(90deg); /* Safari and Chrome */
+				-moz-transform: rotate(90deg); /* Firefox */
+				-ms-transform: rotate(90deg); /* IE 9 */
+				-o-transform: rotate(90deg); /* Opera */
+				transform: rotate(90deg);
+			}
+		}
+
+		@media screen and (max-width: 700px) {
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+			h2 {
+				text-align: center;
+			}
+			div.desc {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.pricing {
+	padding-top: 100px;
+	padding-bottom: 300px;
+	.carding {
+		padding: 30px;
+		border-radius: 10px;
+		background-color: white;
+	}
+}
+
+
+
+.footer {
+	background-color: #517dfc;
+	h1 {
+		color: white;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	section {
+		display: flex;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.desc {
+		color: white;
+	}
+}

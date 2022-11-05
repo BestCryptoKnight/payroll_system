@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+input:active,
+input:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+
+}
+
+input {
+  border-radius: 6px;
+  background: rgba(163, 162, 162, 0.548);
+  color: white;
+  padding: 0px 10px;
+  font-size: 18px !important;
+  outline: none;
+  border: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.modal-continer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-back {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100000;
+  backdrop-filter: blur(1.2px);
+  background-color: rgba(48, 50, 54, 0.712);
+}
+
+.modal-body {
+  z-index: 100001;
+  margin: auto auto;
+  border-radius: 10px;
+}
+
+.wallet-modal {
+  background: #38393a;
+  opacity: 0.95;
+  box-shadow: 0px 0px 3px 2px white;
+}
+
+.wallet-icon-hover {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.wallet-icon-hover:hover {
+  background: rgb(143, 137, 137);
+  cursor: pointer;
+}
+
+.wallet-imgs {
+  width: 11rem;
+  height: 11rem;
+}
+
+.wallet-modal {
+  max-width: 500px;
+}
+
+@media (max-width:567px) {
+  .wallet-imgs {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .wallet-modal {
+    max-width: 20rem;
+  }
+}

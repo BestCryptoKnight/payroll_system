@@ -1,0 +1,20 @@
+{
+    "1": {
+        "tokens": {
+            "EE": {
+                "address": "0x56083560594e314b5cdd1680ec6a493bb851bbd8",
+                "decimals": 9
+            }
+        },
+        "payroll": "0x0532a53140845f016c1C686C0Ed7B989cb40cf82"
+    },
+    "5": {
+        "tokens": {
+            "dai": {
+                "address": "0xf35f0114D97E2255E7837fE262BF29b8851eD6D1",
+                "decimals": 18
+            }
+        },
+        "payroll": "0x0532a53140845f016c1C686C0Ed7B989cb40cf82"
+    }
+}

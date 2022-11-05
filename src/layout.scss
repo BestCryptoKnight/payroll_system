@@ -1,0 +1,28 @@
+.dropdown {
+    position: relative;
+}
+
+.wallet-dropdown {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 5px;
+    translate: height .3s ease;
+
+    li {
+        background-color: rgba($color: #ffffff, $alpha: 0.6);
+        display: block;
+        padding: 8px 0;
+        text-align: center;
+        color: #333;
+
+        &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 0.8);
+        }
+    }
+}
